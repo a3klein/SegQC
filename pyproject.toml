@@ -1,0 +1,46 @@
+[project]
+name = "SegQC"
+version = "0.0.1"
+authors = [
+  { name="Amit Klein ", email="a3klein@ucsd.edu" },
+]
+description = "Package to perform QC on a MERFISH segmentation"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+dependencies = [
+    "adjusttext>=1.3.0",
+    "anndata>=0.11.4",
+    "colorcet>=3.1.0",
+    "datashader>=0.18.0",
+    "geopandas>=1.0.1",
+    "imageio>=2.37.0",
+    "notebook>=7.4.1",
+    "numpy>=2.2.5",
+    "polars>=1.27.1",
+    "pyarrow>=19.0.1",
+    "pypalettes>=0.1.5",
+    "ruff>=0.11.6",
+    "scanpy>=1.11.1",
+    "scikit-image>=0.25.2",
+    "tifffile>=2025.3.30",
+]
+
+[project.urls]
+Homepage = "https://github.com/aklein/SegQC"
+Issues = "https://github.com/aklein/SegQC/issues"
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+]
